@@ -1,0 +1,55 @@
+/* 블로그 이미지 스타일 수정 - 기존 CSS와 일관성 유지 */
+
+.content-blog.blog-grid .thumbnail {
+  margin-bottom: 25px;
+  overflow: hidden;
+  border-radius: 6px;
+  position: relative;
+}
+
+.content-blog.blog-grid .thumbnail a {
+  display: block;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.content-blog.blog-grid .thumbnail a img {
+  width: 100%;
+  border-radius: 6px;
+  transition: transform 0.5s ease;
+  display: block;
+}
+
+.content-blog.blog-grid:hover .thumbnail a img {
+  transform: scale(1.1);
+}
+
+.content-blog.blog-grid .thumbnail .blog-category {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  z-index: 2;
+}
+
+.content-blog.blog-grid .thumbnail .blog-category a {
+  display: block;
+  background-color: var(--blackColor);
+  border: 1px solid var(--whiteColor);
+  padding: 2px 10px;
+  border-radius: 4px;
+  color: var(--whiteColor);
+  font-size: 14px;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+.content-blog.blog-grid .thumbnail .blog-category a:hover {
+  opacity: 0.9;
+}
+
+/* 다크 모드 */
+.theme-dark .content-blog.blog-grid .thumbnail .blog-category a {
+  background-color: #222 !important;
+  border: 1px solid rgba(255, 255, 255, 0.3) !important;
+  color: #fff !important;
+}

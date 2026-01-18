@@ -1,0 +1,23 @@
+<svg width="180" height="50" viewBox="0 0 180 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- 원형 배경 -->
+  <circle cx="25" cy="25" r="22" fill="#E73E58" opacity="0.1"/>
+  <circle cx="25" cy="25" r="18" fill="#E73E58" opacity="0.2"/>
+  
+  <!-- 비행기 아이콘 (더 세련된 디자인) -->
+  <g transform="translate(15, 12)">
+    <!-- 비행기 본체 -->
+    <path d="M8 10L2 16H6L10 20L14 16H18L12 10L8 10Z" fill="#E73E58"/>
+    <!-- 날개 -->
+    <path d="M10 20L6 28H14L10 20Z" fill="#E73E58" opacity="0.8"/>
+    <!-- 꼬리 -->
+    <path d="M8 10L4 4H8V10Z" fill="#E73E58" opacity="0.8"/>
+  </g>
+  
+  <!-- 텍스트 "OURTRIP" -->
+  <text x="50" y="30" font-family="'Noto Sans KR', 'Arial', sans-serif" font-size="26" font-weight="700" letter-spacing="1" fill="currentColor" class="logo-text">
+    OURTRIP
+  </text>
+  
+  <!-- 강조 점 -->
+  <circle cx="132" cy="20" r="2" fill="#E73E58"/>
+</svg>

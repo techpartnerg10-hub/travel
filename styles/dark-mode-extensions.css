@@ -1,0 +1,1235 @@
+/* 새로 추가된 컴포넌트들의 다크 모드 스타일 */
+
+/* 상품 카드 다크 모드 */
+.theme-dark .product-card {
+  background: #191919 !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.3) !important;
+}
+
+.theme-dark .product-card h3,
+.theme-dark .product-card h2,
+.theme-dark .product-card h1 {
+  color: #fff !important;
+}
+
+.theme-dark .product-card p,
+.theme-dark .product-card span {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.theme-dark .product-card .ri-map-pin-line,
+.theme-dark .product-card .ri-calendar-line {
+  color: var(--mainColor) !important;
+}
+
+/* 상품 카드 지역/일정 텍스트 다크 모드 */
+.theme-dark .product-card .product-location-info {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.theme-dark .product-card .product-location-info span {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+/* 상품 그리드 컨테이너 다크 모드 */
+.theme-dark .product-grid-container {
+  background: transparent !important;
+}
+
+.theme-dark .product-sort-bar {
+  border-bottom-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.theme-dark .product-sort-bar strong {
+  color: var(--mainColor) !important;
+}
+
+/* 필터 카드 다크 모드 */
+.theme-dark .filter-card,
+.theme-dark .product-filter-sidebar {
+  background: #191919 !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.3) !important;
+}
+
+.theme-dark .filter-card h3,
+.theme-dark .filter-card h4 {
+  color: #fff !important;
+}
+
+.theme-dark .filter-card label {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.theme-dark .filter-card input[type="radio"] {
+  accent-color: var(--mainColor);
+}
+
+/* 필터 그룹 제목 및 화살표 다크 모드 */
+.theme-dark .filter-card .filter-group-title {
+  color: #fff !important;
+}
+
+.theme-dark .filter-card .filter-arrow-icon {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+/* 필터 옵션 버튼 다크 모드 */
+.theme-dark .filter-option-btn {
+  background: #121212 !important;
+  border: 2px solid rgba(255, 255, 255, 0.2) !important;
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.theme-dark .filter-option-btn:hover {
+  border-color: var(--mainColor) !important;
+  color: var(--mainColor) !important;
+  background: #191919 !important;
+}
+
+.theme-dark .filter-option-btn.active {
+  background: var(--mainColor) !important;
+  border-color: var(--mainColor) !important;
+  color: #fff !important;
+}
+
+.theme-dark .filter-option-btn.active:hover {
+  background: var(--secondaryColor) !important;
+  border-color: var(--secondaryColor) !important;
+}
+
+/* 예약 폼 다크 모드 */
+.theme-dark .booking-form-container {
+  background: #191919 !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.3) !important;
+}
+
+.theme-dark .booking-form-container h3 {
+  color: #fff !important;
+}
+
+.theme-dark .booking-form-container label {
+  color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.theme-dark .booking-form-container .form-control {
+  background-color: #121212 !important;
+  border: 2px solid rgba(255, 255, 255, 0.2) !important;
+  color: #fff !important;
+}
+
+.theme-dark .booking-form-container .form-control:focus {
+  border-color: var(--mainColor) !important;
+  box-shadow: 0 0 0 3px rgba(231, 62, 88, 0.2) !important;
+}
+
+.theme-dark .booking-form-container select.form-control {
+  background-color: #121212 !important;
+  color: #fff !important;
+}
+
+.theme-dark .booking-form-container .form-control[type="date"] {
+  color: #fff !important;
+}
+
+.theme-dark .booking-form-container .form-control[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+  opacity: 0.7;
+}
+
+.theme-dark .booking-price-summary {
+  background: #121212 !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+.theme-dark .booking-price-summary span {
+  color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.theme-dark .booking-contact-info {
+  background: #121212 !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+.theme-dark .booking-contact-info p {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.theme-dark .booking-contact-info a {
+  color: var(--mainColor) !important;
+}
+
+/* 상품 상세 페이지 다크 모드 */
+.theme-dark .product-detail-container {
+  background: transparent !important;
+}
+
+.theme-dark .product-detail-section {
+  background: transparent !important;
+}
+
+.theme-dark .product-info,
+.theme-dark .product-description,
+.theme-dark .product-highlights,
+.theme-dark .product-itinerary,
+.theme-dark .product-included-excluded,
+.theme-dark .product-cancellation,
+.theme-dark .product-reviews {
+  background: transparent !important;
+}
+
+.theme-dark .product-info h1,
+.theme-dark .product-info h2,
+.theme-dark .product-info h3 {
+  color: #fff !important;
+}
+
+.theme-dark .product-description h2,
+.theme-dark .product-description h2[style*="color: #354A5E"],
+.theme-dark .product-description h2[style*="color:#354A5E"],
+.theme-dark .product-highlights h2,
+.theme-dark .product-itinerary h2,
+.theme-dark .product-included-excluded h3 {
+  color: #fff !important;
+}
+
+.theme-dark .product-description div[style*="color: #666"],
+.theme-dark .product-description div[style*="color:#666"],
+.theme-dark .product-description > div {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+/* 상품 설명 섹션 배경색 */
+.theme-dark .product-description {
+  background: transparent !important;
+}
+
+/* 상품 설명 텍스트 컨테이너 */
+.theme-dark .product-description > div[style*="fontSize"] {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+/* 하이라이트 리스트 다크 모드 */
+.theme-dark .product-highlights ul li {
+  color: rgba(255, 255, 255, 0.8) !important;
+  border-bottom-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.theme-dark .product-highlights ul li[style*="color: #666"],
+.theme-dark .product-highlights ul li[style*="color:#666"] {
+  color: rgba(255, 255, 255, 0.8) !important;
+  border-bottom-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.theme-dark .product-highlights ul li .ri-checkbox-circle-line {
+  color: var(--mainColor) !important;
+}
+
+.theme-dark .product-highlights ul li[style*="color: #666"] .ri-checkbox-circle-line,
+.theme-dark .product-highlights ul li[style*="color:#666"] .ri-checkbox-circle-line {
+  color: var(--mainColor) !important;
+}
+
+/* 포함/불포함 사항 다크 모드 */
+.theme-dark .product-included-excluded ul li {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.theme-dark .product-included-excluded ul li[style*="color: #666"],
+.theme-dark .product-included-excluded ul li[style*="color:#666"] {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.theme-dark .product-included-excluded ul li .ri-check-line {
+  color: #28a745 !important;
+}
+
+.theme-dark .product-included-excluded ul li .ri-close-line {
+  color: #dc3545 !important;
+}
+
+.theme-dark .product-info p,
+.theme-dark .product-description p,
+.theme-dark .product-description div {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+/* 상품 설명의 모든 자식 요소 텍스트 색상 */
+.theme-dark .product-description * {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+/* 제목은 예외적으로 더 밝게 */
+.theme-dark .product-description h2,
+.theme-dark .product-description h2 * {
+  color: #fff !important;
+}
+
+/* 상품 정보 텍스트 색상 */
+.theme-dark .product-info span,
+.theme-dark .product-info div {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.theme-dark .product-info h1 {
+  color: #fff !important;
+}
+
+/* 별점 및 리뷰 텍스트 */
+.theme-dark .product-info span[style*="color: #666"],
+.theme-dark .product-info span[style*="color:#666"] {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+/* 상품 타입 배지 */
+.theme-dark .product-info > div > span {
+  color: var(--mainColor) !important;
+}
+
+/* 상품 정보의 모든 div 텍스트 색상 */
+.theme-dark .product-info > div[style*="display: flex"] > div[style*="color: #666"],
+.theme-dark .product-info > div[style*="display:flex"] > div[style*="color:#666"] {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.theme-dark .product-info .ri-map-pin-line,
+.theme-dark .product-info .ri-calendar-line,
+.theme-dark .product-info .ri-price-tag-3-line {
+  color: var(--mainColor) !important;
+}
+
+/* 가격 영역 다크 모드 - 인라인 스타일 오버라이드 */
+.theme-dark .product-info > div[style*="background: #f9fafa"],
+.theme-dark .product-info > div[style*="background:#f9fafa"] {
+  background: #191919 !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+.theme-dark .product-info > div[style*="background: #f9fafa"] > div,
+.theme-dark .product-info > div[style*="background:#f9fafa"] > div {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.theme-dark .product-info > div[style*="background: #f9fafa"] > div[style*="color: #999"],
+.theme-dark .product-info > div[style*="background:#f9fafa"] > div[style*="color:#999"],
+.theme-dark .product-info > div[style*="background: #f9fafa"] > div[style*="color: #999"] {
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.theme-dark .product-info > div[style*="background: #f9fafa"] > div[style*="color: #E73E58"],
+.theme-dark .product-info > div[style*="background:#f9fafa"] > div[style*="color:#E73E58"] {
+  color: var(--mainColor) !important;
+}
+
+.theme-dark .product-info > div[style*="background: #f9fafa"] > div[style*="color: #666"] > span[style*="color: #E73E58"],
+.theme-dark .product-info > div[style*="background:#f9fafa"] > div[style*="color:#666"] > span[style*="color:#E73E58"] {
+  color: var(--mainColor) !important;
+}
+
+.theme-dark .product-info > div[style*="background: #f9fafa"] > div[style*="color: #666"],
+.theme-dark .product-info > div[style*="background:#f9fafa"] > div[style*="color:#666"] {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+/* 일정표 다크 모드 */
+.theme-dark .itinerary-container {
+  background: transparent !important;
+}
+
+.theme-dark .itinerary-day {
+  background: #191919 !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+.theme-dark .itinerary-day > div:first-child {
+  background: #191919 !important;
+}
+
+.theme-dark .itinerary-day h3 {
+  color: #fff !important;
+}
+
+.theme-dark .itinerary-content {
+  background: #191919 !important;
+  border-top-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.theme-dark .itinerary-content p {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.theme-dark .itinerary-content h4 {
+  color: #fff !important;
+}
+
+.theme-dark .itinerary-content span {
+  background: #121212 !important;
+  border-color: rgba(255, 255, 255, 0.1) !important;
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.theme-dark .itinerary-content li {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+/* 이미지 갤러리 다크 모드 */
+.theme-dark .image-gallery-container {
+  background: transparent !important;
+}
+
+.theme-dark .lightbox-modal {
+  background: rgba(0, 0, 0, 0.98) !important;
+}
+
+/* 리뷰 섹션 다크 모드 */
+.theme-dark .product-reviews > div > div,
+.theme-dark .product-reviews > div > div[style*="background: #fff"],
+.theme-dark .product-reviews > div > div[style*="background:#fff"] {
+  background: #191919 !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+.theme-dark .product-reviews h2 {
+  color: #fff !important;
+}
+
+.theme-dark .product-reviews h4 {
+  color: #fff !important;
+}
+
+.theme-dark .product-reviews p {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.theme-dark .product-reviews > div > div div[style*="color: #354A5E"],
+.theme-dark .product-reviews > div > div div[style*="color:#354A5E"],
+.theme-dark .product-reviews > div > div h4[style*="color: #354A5E"],
+.theme-dark .product-reviews > div > div h4[style*="color:#354A5E"] {
+  color: #fff !important;
+}
+
+.theme-dark .product-reviews > div > div div[style*="color: #999"],
+.theme-dark .product-reviews > div > div div[style*="color:#999"],
+.theme-dark .product-reviews > div > div p[style*="color: #999"],
+.theme-dark .product-reviews > div > div p[style*="color:#999"] {
+  color: rgba(255, 255, 255, 0.6) !important;
+}
+
+.theme-dark .product-reviews > div > div div[style*="color: #666"],
+.theme-dark .product-reviews > div > div div[style*="color:#666"],
+.theme-dark .product-reviews > div > div p[style*="color: #666"],
+.theme-dark .product-reviews > div > div p[style*="color:#666"] {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.theme-dark .product-reviews > div > div:hover {
+  border-color: var(--mainColor) !important;
+  box-shadow: 0 0 10px rgba(231, 62, 88, 0.2) !important;
+}
+
+/* 여행 약관 페이지 다크 모드 */
+.theme-dark .travel-terms-content {
+  background: #191919 !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.3) !important;
+}
+
+.theme-dark .travel-terms-text {
+  color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.theme-dark .travel-terms-text h2 {
+  color: #fff !important;
+}
+
+.theme-dark .travel-terms-text p {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.theme-dark .travel-terms-text ul li {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.theme-dark .travel-terms-text div[style*="border-top: 1px solid #eee"],
+.theme-dark .travel-terms-text div[style*="border-top:1px solid #eee"],
+.theme-dark .travel-terms-text div[style*="border-top: 1px solid #eee"] {
+  border-top-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.theme-dark .travel-terms-text div[style*="color: #999"],
+.theme-dark .travel-terms-text div[style*="color:#999"] {
+  color: rgba(255, 255, 255, 0.6) !important;
+}
+
+.theme-dark .travel-terms-text div[style*="color: #999"] p,
+.theme-dark .travel-terms-text div[style*="color:#999"] p {
+  color: rgba(255, 255, 255, 0.6) !important;
+}
+
+/* 이용약관 페이지 다크 모드 */
+.theme-dark .terms-of-service-content {
+  background: #191919 !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.3) !important;
+}
+
+.theme-dark .terms-of-service-text {
+  color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.theme-dark .terms-of-service-text h2 {
+  color: #fff !important;
+}
+
+.theme-dark .terms-of-service-text p {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.theme-dark .terms-of-service-text ul li {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.theme-dark .terms-of-service-text div[style*="border-top: 1px solid #eee"],
+.theme-dark .terms-of-service-text div[style*="border-top:1px solid #eee"],
+.theme-dark .terms-of-service-text div[style*="border-top: 1px solid #eee"] {
+  border-top-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.theme-dark .terms-of-service-text div[style*="color: #999"],
+.theme-dark .terms-of-service-text div[style*="color:#999"] {
+  color: rgba(255, 255, 255, 0.6) !important;
+}
+
+.theme-dark .terms-of-service-text div[style*="color: #999"] p,
+.theme-dark .terms-of-service-text div[style*="color:#999"] p {
+  color: rgba(255, 255, 255, 0.6) !important;
+}
+
+/* 개인정보처리방침 페이지 다크 모드 */
+.theme-dark .privacy-policy-content {
+  background: #191919 !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.3) !important;
+}
+
+.theme-dark .privacy-policy-text {
+  color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.theme-dark .privacy-policy-text h2 {
+  color: #fff !important;
+}
+
+.theme-dark .privacy-policy-text p {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.theme-dark .privacy-policy-text p strong {
+  color: rgba(255, 255, 255, 0.95) !important;
+  font-weight: 600 !important;
+}
+
+.theme-dark .privacy-policy-text ul li {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.theme-dark .privacy-policy-text ul li strong {
+  color: rgba(255, 255, 255, 0.95) !important;
+  font-weight: 600 !important;
+}
+
+.theme-dark .privacy-info-box {
+  background: #121212 !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+.theme-dark .privacy-info-box p {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.theme-dark .privacy-info-box p strong {
+  color: #fff !important;
+  font-weight: 600 !important;
+}
+
+.theme-dark .privacy-policy-text div[style*="border-top: 1px solid #eee"],
+.theme-dark .privacy-policy-text div[style*="border-top:1px solid #eee"],
+.theme-dark .privacy-policy-text div[style*="border-top: 1px solid #eee"] {
+  border-top-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.theme-dark .privacy-policy-text div[style*="color: #999"],
+.theme-dark .privacy-policy-text div[style*="color:#999"] {
+  color: rgba(255, 255, 255, 0.6) !important;
+}
+
+.theme-dark .privacy-policy-text div[style*="color: #999"] p,
+.theme-dark .privacy-policy-text div[style*="color:#999"] p {
+  color: rgba(255, 255, 255, 0.6) !important;
+}
+
+/* 마이페이지 다크 모드 */
+/* page-title-section은 page-header와 별도 클래스로 관리 */
+.theme-dark .page-title-section {
+  background: #121212 !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+.theme-dark .page-title-section h1 {
+  color: #fff !important;
+}
+
+.theme-dark .page-title-section p {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.theme-dark .mypage-sidebar,
+.theme-dark .mypage-content {
+  background: #191919 !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.3) !important;
+}
+
+.theme-dark .mypage-sidebar h3 {
+  color: #fff !important;
+}
+
+.theme-dark .mypage-sidebar p {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+/* 마이페이지 서브 메뉴 다크 모드 가독성 개선 */
+.theme-dark .mypage-sidebar-nav .mypage-nav-btn {
+  color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.theme-dark .mypage-sidebar-nav .mypage-nav-btn:hover {
+  background: rgba(255, 255, 255, 0.1) !important;
+  color: #fff !important;
+}
+
+.theme-dark .mypage-sidebar-nav .mypage-nav-btn.active {
+  background: var(--mainColor) !important;
+  color: #fff !important;
+}
+
+/* 마이페이지 모바일 탭 다크 모드 */
+.theme-dark .mypage-mobile-tabs {
+  border-bottom-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.theme-dark .mypage-tab-list {
+  border-bottom-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.theme-dark .mypage-tab-btn {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.theme-dark .mypage-tab-btn:hover {
+  color: var(--mainColor) !important;
+}
+
+.theme-dark .mypage-tab-btn.active {
+  color: var(--mainColor) !important;
+  border-bottom-color: var(--mainColor) !important;
+}
+
+.theme-dark .mypage-content h2 {
+  color: #fff !important;
+}
+
+.theme-dark .mypage-content .booking-item,
+.theme-dark .mypage-content .inquiry-item {
+  background: #191919 !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+.theme-dark .mypage-content .booking-item h3,
+.theme-dark .mypage-content .inquiry-item h3 {
+  color: #fff !important;
+}
+
+.theme-dark .mypage-content .booking-item p,
+.theme-dark .mypage-content .inquiry-item p {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+/* 로그인/회원가입 페이지 다크 모드 */
+.theme-dark .login-page,
+.theme-dark .signup-page {
+  background: #121212 !important;
+}
+
+.theme-dark .login-form-container,
+.theme-dark .signup-form-container {
+  background: #191919 !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5) !important;
+}
+
+.theme-dark .login-form-container h1,
+.theme-dark .signup-form-container h1 {
+  color: #fff !important;
+}
+
+.theme-dark .login-form-container p,
+.theme-dark .signup-form-container p {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+/* 로그인/회원가입 폼 라벨 다크 모드 */
+.theme-dark .login-form-container label,
+.theme-dark .signup-form-container label {
+  color: rgba(255, 255, 255, 0.9) !important;
+}
+
+/* 로그인/회원가입 폼 안내 텍스트 다크 모드 */
+.theme-dark .login-form-container > p,
+.theme-dark .signup-form-container > p {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+/* 소셜 로그인 섹션 제목 다크 모드 */
+.theme-dark .social-login-title {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+/* 구분선 다크 모드 */
+.theme-dark .login-form-container > form > div[style*="border-top"],
+.theme-dark .signup-form-container > form > div[style*="border-top"] {
+  border-top-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+/* 로그인/회원가입 폼 placeholder 다크 모드 - 대조도 낮춤 */
+.theme-dark .login-form-container .form-control::placeholder,
+.theme-dark .signup-form-container .form-control::placeholder {
+  color: rgba(255, 255, 255, 0.4) !important;
+  opacity: 1;
+}
+
+.theme-dark .login-form-container .form-control::-webkit-input-placeholder,
+.theme-dark .signup-form-container .form-control::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.4) !important;
+  opacity: 1;
+}
+
+.theme-dark .login-form-container .form-control:-ms-input-placeholder,
+.theme-dark .signup-form-container .form-control:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.4) !important;
+  opacity: 1;
+}
+
+.theme-dark .login-form-container .form-control::-ms-input-placeholder,
+.theme-dark .signup-form-container .form-control::-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.4) !important;
+  opacity: 1;
+}
+
+/* 소셜 로그인 버튼 다크 모드 - 텍스트 항상 검은색 */
+.theme-dark .social-login-btn {
+  color: #000 !important;
+}
+
+.theme-dark .social-login-btn span {
+  color: #000 !important;
+}
+
+/* 네이버 버튼의 N 아이콘은 제외 (흰색 배경에 녹색) */
+.theme-dark .social-naver > span:first-child {
+  color: #03C75A !important;
+  background: #fff !important;
+}
+
+/* 포함/불포함 사항 다크 모드 */
+.theme-dark .product-included-excluded {
+  background: transparent !important;
+}
+
+.theme-dark .product-included-excluded h3 {
+  color: #fff !important;
+}
+
+.theme-dark .product-included-excluded li {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.theme-dark .product-included-excluded .ri-checkbox-circle-line {
+  color: var(--mainColor) !important;
+}
+
+.theme-dark .product-included-excluded .ri-close-line {
+  color: #dc3545 !important;
+}
+
+/* 취소 정책 다크 모드 */
+.theme-dark .product-cancellation {
+  background: transparent !important;
+}
+
+.theme-dark .product-cancellation h2 {
+  color: #fff !important;
+}
+
+.theme-dark .product-cancellation > div {
+  background: #191919 !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.theme-dark .product-cancellation > div[style*="background: #f9fafa"],
+.theme-dark .product-cancellation > div[style*="background:#f9fafa"] {
+  background: #191919 !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+.theme-dark .product-cancellation > div[style*="color: #666"],
+.theme-dark .product-cancellation > div[style*="color:#666"] {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+/* 페이지 헤더 다크 모드 */
+/* page-title-section은 page-header와 별도 클래스로 관리 */
+.theme-dark .page-title-section {
+  background: #121212 !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+/* 섹션 배경 다크 모드 */
+.theme-dark section {
+  background: transparent !important;
+}
+
+.theme-dark .product-listing-section {
+  background: transparent !important;
+}
+
+/* 가격 표시 다크 모드 */
+.theme-dark .product-card .price,
+.theme-dark .product-info .price {
+  color: var(--mainColor) !important;
+}
+
+.theme-dark .product-card .original-price {
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+
+/* 배지 다크 모드 */
+.theme-dark .product-card .badge {
+  background: var(--mainColor) !important;
+  color: #fff !important;
+}
+
+/* 정렬 바 다크 모드 */
+.theme-dark .product-sort-bar select {
+  background-color: #121212 !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  color: #fff !important;
+}
+
+/* 필터 드로어 다크 모드 */
+.theme-dark .product-filter-drawer {
+  background: #191919 !important;
+}
+
+.theme-dark .product-filter-drawer .filter-card {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+/* Select 요소 다크 모드 개선 */
+.theme-dark select,
+.theme-dark select.form-control {
+  background-color: #121212 !important;
+  border: 2px solid rgba(255, 255, 255, 0.2) !important;
+  color: #fff !important;
+  padding: 10px 35px 10px 15px !important;
+  border-radius: 8px !important;
+  appearance: none !important;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23ffffff' d='M6 9L1 4h10z'/%3E%3C/svg%3E") !important;
+  background-repeat: no-repeat !important;
+  background-position: right 12px center !important;
+  background-size: 12px !important;
+  transition: all 0.3s ease !important;
+}
+
+.theme-dark select:hover,
+.theme-dark select.form-control:hover {
+  border-color: rgba(255, 255, 255, 0.4) !important;
+}
+
+.theme-dark select:focus,
+.theme-dark select.form-control:focus {
+  background-color: #191919 !important;
+  border-color: var(--mainColor) !important;
+  color: #fff !important;
+  outline: none !important;
+  box-shadow: 0 0 0 3px rgba(231, 62, 88, 0.2) !important;
+}
+
+.theme-dark select option {
+  background-color: #191919 !important;
+  color: #fff !important;
+  padding: 10px !important;
+}
+
+.theme-dark select option:hover,
+.theme-dark select option:checked {
+  background-color: var(--mainColor) !important;
+  color: #fff !important;
+}
+
+/* 회사소개 페이지 다크 모드 */
+.theme-dark .about-us-section {
+  background: transparent !important;
+}
+
+.theme-dark .about-us-section .about-section-title {
+  color: #fff !important;
+}
+
+.theme-dark .about-us-section .about-section-text {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.theme-dark .value-card {
+  background: #191919 !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.3) !important;
+}
+
+.theme-dark .value-card .value-card-title {
+  color: #fff !important;
+}
+
+.theme-dark .value-card .value-card-text {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.theme-dark .about-us-section .value-card {
+  background: #191919 !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.3) !important;
+}
+
+.theme-dark .about-us-section .value-card h3 {
+  color: #fff !important;
+}
+
+.theme-dark .about-us-section .value-card p {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+/* 섹션 타이틀 다크 모드 */
+.theme-dark .section-title h2,
+.theme-dark .section-title h2:last-child {
+  color: #fff !important;
+}
+
+.theme-dark .section-title p {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.theme-dark .section-title span,
+.theme-dark .section-title .top-title {
+  color: var(--mainColor) !important;
+}
+
+/* 블로그 그리드 다크 모드 */
+.theme-dark .content-blog.blog-grid {
+  background: #191919 !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.3) !important;
+}
+
+.theme-dark .content-blog.blog-grid h5 {
+  color: #fff !important;
+}
+
+.theme-dark .content-blog.blog-grid p {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.theme-dark .content-blog.blog-grid .blog-btn {
+  color: var(--mainColor) !important;
+  font-weight: bold !important;
+}
+
+.theme-dark .content-blog.blog-grid .content .blog-btn i,
+.theme-dark .content-blog.blog-grid .blog-btn i {
+  color: var(--mainColor) !important;
+}
+
+.theme-dark .content-blog.blog-grid:hover .content .blog-btn i,
+.theme-dark .content-blog.blog-grid .blog-btn:hover i {
+  color: var(--mainColor) !important;
+}
+
+/* 블로그 상세 페이지 다크 모드 */
+.theme-dark .blog-content,
+.theme-dark .blog-detail-content {
+  color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.theme-dark .blog-content h2,
+.theme-dark .blog-detail-content h2 {
+  color: #fff !important;
+}
+
+.theme-dark .blog-content h3,
+.theme-dark .blog-detail-content h3 {
+  color: #fff !important;
+}
+
+.theme-dark .blog-content p,
+.theme-dark .blog-detail-content p {
+  color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.theme-dark .blog-content ul,
+.theme-dark .blog-content ol,
+.theme-dark .blog-detail-content ul,
+.theme-dark .blog-detail-content ol {
+  color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.theme-dark .blog-content li,
+.theme-dark .blog-detail-content li {
+  color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.theme-dark .blog-content strong,
+.theme-dark .blog-detail-content strong {
+  color: #fff !important;
+}
+
+/* 블로그 Excerpt (요약) 섹션 다크 모드 */
+.theme-dark .blog-excerpt {
+  background: #191919 !important;
+  border-left: 4px solid var(--mainColor) !important;
+  color: rgba(255, 255, 255, 0.9) !important;
+}
+
+/* 비자 안내 페이지 다크 모드 */
+.theme-dark .visa-card {
+  background: #191919 !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.3) !important;
+}
+
+.theme-dark .visa-card h3 {
+  color: #fff !important;
+}
+
+.theme-dark .visa-card p,
+.theme-dark .visa-card span {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.theme-dark .visa-info-box {
+  background: #191919 !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+.theme-dark .visa-info-box h2 {
+  color: #fff !important;
+}
+
+.theme-dark .visa-info-box p,
+.theme-dark .visa-info-box li {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+/* 문의하기 페이지 다크 모드 */
+.theme-dark .contact-info-card,
+.theme-dark .contact-form-card {
+  background: #191919 !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.3) !important;
+}
+
+.theme-dark .contact-info-card h2,
+.theme-dark .contact-form-card h2 {
+  color: #fff !important;
+}
+
+.theme-dark .contact-info-card h4 {
+  color: #fff !important;
+}
+
+.theme-dark .contact-info-card p {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.theme-dark .contact-form-card label {
+  color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.theme-dark .contact-form-card textarea {
+  background-color: #121212 !important;
+  border: 2px solid rgba(255, 255, 255, 0.2) !important;
+  color: #fff !important;
+}
+
+.theme-dark .contact-form-card textarea:focus {
+  border-color: var(--mainColor) !important;
+  box-shadow: 0 0 0 3px rgba(231, 62, 88, 0.2) !important;
+}
+
+.theme-dark .contact-form-card textarea::placeholder {
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+
+/* 404 페이지 다크 모드 */
+.theme-dark .not-found-section {
+  background: #121212 !important;
+}
+
+.theme-dark .not-found-section h1 {
+  color: var(--mainColor) !important;
+}
+
+.theme-dark .not-found-section h2 {
+  color: #fff !important;
+}
+
+.theme-dark .not-found-section p {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+/* 로더 다크 모드 */
+.theme-dark .loader {
+  background: #121212 !important;
+}
+
+.theme-dark .loader.js-preloader {
+  background: #121212 !important;
+}
+
+/* FAQ 아코디언 아이콘 다크 모드 - 아이템 배경색과 일치 및 transition 동기화 */
+.theme-dark .faq-accordion .accordion .accordion-title {
+  background: #191919 !important;
+  color: #fff !important;
+  transition: background-color 0.5s ease, color 0.5s ease !important;
+  -webkit-transition: background-color 0.5s ease, color 0.5s ease !important;
+  transition-delay: 0s !important;
+  -webkit-transition-delay: 0s !important;
+}
+
+.theme-dark .faq-accordion .accordion .accordion-title i,
+.theme-dark .faq-accordion .accordion .accordion-title .bx {
+  color: #fff !important;
+  background-color: #191919 !important;
+  transition: background-color 0.5s ease, color 0.5s ease !important;
+  -webkit-transition: background-color 0.5s ease, color 0.5s ease !important;
+  transition-delay: 0s !important;
+  -webkit-transition-delay: 0s !important;
+}
+
+.theme-dark .faq-accordion .accordion .accordion-title.active {
+  background: var(--secondaryColor) !important;
+  color: #fff !important;
+  transition: background-color 0.5s ease, color 0.5s ease !important;
+  -webkit-transition: background-color 0.5s ease, color 0.5s ease !important;
+  transition-delay: 0s !important;
+  -webkit-transition-delay: 0s !important;
+}
+
+.theme-dark .faq-accordion .accordion .accordion-title.active i,
+.theme-dark .faq-accordion .accordion .accordion-title.active .bx {
+  color: #fff !important;
+  background-color: var(--secondaryColor) !important;
+  transition: background-color 0.5s ease, color 0.5s ease !important;
+  -webkit-transition: background-color 0.5s ease, color 0.5s ease !important;
+  transition-delay: 0s !important;
+  -webkit-transition-delay: 0s !important;
+}
+
+/* 모바일 메뉴 다크 모드 */
+@media only screen and (max-width: 991px) {
+  .theme-dark .header-bottom .navbar .main-menu-wrap {
+    background: #091315 !important;
+  }
+  
+  .theme-dark .header-bottom .navbar .main-menu-wrap .navbar-nav .nav-link {
+    color: #fff !important;
+  }
+  
+  .theme-dark .header-bottom .navbar .main-menu-wrap .navbar-nav .nav-item.active .nav-link {
+    color: var(--mainColor) !important;
+    font-weight: 700 !important;
+  }
+  
+  .theme-dark .header-bottom .navbar .main-menu-wrap .navbar-nav .nav-link:hover {
+    color: var(--mainColor) !important;
+  }
+  
+  .theme-dark .header-bottom .navbar .main-menu-wrap .navbar-nav .nav-item button.nav-link {
+    color: #fff !important;
+  }
+  
+  .theme-dark .header-bottom .navbar .main-menu-wrap .navbar-nav .nav-item button.nav-link:hover {
+    color: var(--mainColor) !important;
+  }
+  
+  .theme-dark .header-bottom .navbar .main-menu-wrap .menu-close a {
+    color: #fff !important;
+  }
+}
+
+/* 데스크톱 네비게이션 메뉴 다크 모드 */
+.theme-dark .header-bottom .navbar .navbar-nav .nav-link {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.theme-dark .header-bottom .navbar .navbar-nav .nav-item.active .nav-link {
+  color: var(--mainColor) !important;
+  font-weight: 700 !important;
+}
+
+.theme-dark .header-bottom .navbar .navbar-nav .nav-link:hover {
+  color: var(--mainColor) !important;
+}
+
+.theme-dark .header-bottom .navbar .other-options .user-account span {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.theme-dark .header-bottom .navbar .other-options .user-account a {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.theme-dark .header-bottom .navbar .other-options .user-account a:hover {
+  color: var(--mainColor) !important;
+}
+
+.theme-dark .header-bottom .navbar .other-options .user-account button {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.theme-dark .header-bottom .navbar .other-options .user-account button:hover {
+  color: var(--mainColor) !important;
+}
+
+/* 로그인/회원가입 링크 색상 - 메뉴 텍스트와 일치 */
+.header-bottom .navbar .other-options .user-account a {
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+.header-bottom .navbar .other-options .user-account a:hover {
+  color: var(--mainColor) !important;
+}
+
+/* 푸터 법적/정책 정보 메뉴 링크 - 모드에 상관없이 항상 밝은색 */
+.footer-wrap .footer-widget .footer-menu li a,
+.footer-wrap .footer-widget .menu li a {
+  color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.footer-wrap .footer-widget .footer-menu li a:hover,
+.footer-wrap .footer-widget .menu li a:hover {
+  color: var(--mainColor) !important;
+}

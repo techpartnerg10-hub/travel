@@ -1,0 +1,668 @@
+/* OurTrip 테마 스타일 import - @import는 반드시 파일 최상단에 위치해야 합니다 */
+/* Bootstrap */
+@import url('./css/bootstrap.min8a54.css');
+
+/* 아이콘 폰트 */
+@import url('./css/boxicons.min8a54.css');
+@import url('./css/font-awesome.min8a54.css');
+@import url('./css/remixicon8a54.css');
+
+/* 라이브러리 스타일 */
+@import url('./css/owl.carousel.min8a54.css');
+@import url('./css/owl-theme-default-min8a54.css');
+@import url('./css/fancybox8a54.css');
+@import url('./css/magnific-popup.min8a54.css');
+@import url('./css/aos8a54.css');
+@import url('./css/odometer.min8a54.css');
+
+/* 메인 스타일 */
+@import url('./css/main8a54.css');
+@import url('./css/responsive8a54.css');
+@import url('./css/dark-theme8a54.css');
+
+/* 테마 스타일 */
+@import url('./theme.css');
+
+/* 모바일 최적화 */
+@import url('./mobile-optimization.css');
+
+/* 다크 모드 확장 */
+@import url('./dark-mode-extensions.css');
+
+/* 블로그 이미지 수정 */
+@import url('./blog-image-fix.css');
+
+/* 회사소개 페이지 스타일 */
+@import url('./about-us-styles.css');
+
+/* 전역 스타일 */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  -webkit-text-size-adjust: 100%;
+  font-feature-settings: 'kern' 1;
+  font-kerning: normal;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* CSS 변수 정의 (temp 프로젝트에서) */
+:root {
+  --mainColor: #E73E58;
+  --secondaryColor: #6C1422;
+  --bgColor: #f9fafa;
+}
+
+/* 기본 로고 표시 설정 - theme-light가 없을 때도 logo-light만 보이도록 */
+.navbar-brand .logo-dark {
+  display: none;
+}
+
+.navbar-brand .logo-light {
+  display: block;
+}
+
+/* theme-light 클래스가 있을 때 */
+.theme-light .navbar-brand .logo-dark {
+  display: none !important;
+}
+
+.theme-light .navbar-brand .logo-light {
+  display: block !important;
+}
+
+/* Owl Carousel이 초기화되지 않은 경우에도 표시되도록 */
+.owl-carousel {
+  display: block !important;
+}
+
+.slider-carousel.owl-carousel {
+  display: block !important;
+}
+
+/* 슬라이더 영역이 보이도록 */
+.slider-area {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+.slide-item {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+/* 슬라이더 컨텐츠 중앙 정렬 - 원본과 동일하게 유지 */
+.slider-carousel .auto-container {
+  position: static !important;
+  padding: 0px 15px !important;
+  margin: 0 auto !important;
+}
+
+/* 원본 높이 유지 - padding으로 높이 결정 */
+.slider-area.style-one .slider-carousel .slide-item {
+  padding: 150px 0 !important;
+}
+
+/* 헤더 기본 상태 - 페이지 톱에서는 absolute */
+.header-wrap {
+  position: absolute !important;
+}
+
+/* 헤더 스크롤 시 - 오버레이로 작동 */
+.header-wrap.sticky {
+  position: fixed !important;
+  top: 0 !important;
+  background: rgba(255, 255, 255, 0.95) !important;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+/* 모바일 메뉴 오버레이 (블러 처리용) */
+@media only screen and (max-width: 991px) {
+  .mobile-menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    z-index: 9998;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s ease, visibility 0.4s ease;
+    pointer-events: none;
+  }
+  
+  .mobile-menu-overlay.active {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+}
+
+/* 모바일 메뉴 - 오른쪽에서 슬라이드 (60% 너비) */
+@media only screen and (max-width: 991px) {
+  .header-bottom .navbar .main-menu-wrap {
+    position: fixed !important;
+    top: 0 !important;
+    right: -60% !important; /* 오른쪽에서 시작, 60% 너비만큼 밖에 위치 */
+    left: auto !important;
+    width: 60% !important;
+    height: 100vh !important;
+    background: var(--bgColor) !important;
+    z-index: 9999 !important;
+    transition: right 0.4s ease !important;
+    padding: 55px 20px 30px !important;
+    overflow-y: auto !important;
+    visibility: hidden !important;
+    display: block !important; /* collapse 클래스의 display: none을 오버라이드 */
+    opacity: 0 !important;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header-bottom .navbar .main-menu-wrap.open {
+    right: 0 !important; /* 오른쪽에서 슬라이드되어 나옴 */
+    visibility: visible !important;
+    display: block !important;
+    opacity: 1 !important;
+  }
+  
+  .header-wrap.sticky .header-bottom .navbar .main-menu-wrap.open {
+    top: 0 !important;
+  }
+  
+  /* collapse 클래스가 display를 제어하지 못하도록 */
+  .header-bottom .navbar .collapse:not(.show) {
+    display: block !important;
+  }
+  
+  .header-bottom .navbar .collapse.show {
+    display: block !important;
+  }
+  
+  /* 모바일 메뉴 네비게이션 링크 색상 */
+  .header-bottom .navbar .main-menu-wrap .navbar-nav .nav-link {
+    color: #333 !important;
+    border: none !important;
+    padding: 10px 15px !important;
+    display: block !important;
+  }
+  
+  .header-bottom .navbar .main-menu-wrap .navbar-nav .nav-item.active .nav-link {
+    color: var(--mainColor) !important;
+    font-weight: 700 !important;
+  }
+  
+  /* 모바일 메뉴 버튼 스타일 (로그아웃 등) */
+  .header-bottom .navbar .main-menu-wrap .navbar-nav .nav-item button.nav-link {
+    color: #333 !important;
+    font-size: inherit !important;
+    font-family: inherit !important;
+    width: 100% !important;
+    text-align: left !important;
+  }
+  
+  .header-bottom .navbar .main-menu-wrap .navbar-nav .nav-item button.nav-link:hover {
+    color: var(--mainColor) !important;
+  }
+  
+  /* 폰 모드에서 페이지 타이틀 섹션 상단 여백 추가 (홈 페이지 제외) */
+  .page-title-section {
+    padding-top: 130px !important;
+  }
+}
+
+/* 데스크톱에서도 로그인/회원가입 페이지 패딩 탑 증가 */
+.login-page,
+.signup-page {
+  padding-top: 120px !important;
+}
+
+/* page-wrapper는 정상적인 플로우 */
+.page-wrapper {
+  position: relative;
+}
+
+/* page-wrapper overflow 수정 - 콘텐츠가 보이도록 */
+.page-wrapper {
+  overflow-y: visible !important;
+}
+
+/* site-main이 보이도록 */
+.site-main {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  /* min-height: 100vh; */
+  padding-bottom: 30px;
+}
+
+/* 모든 섹션 영역이 보이도록 */
+.tour-area,
+.hotel-area,
+.resort-area,
+.flight-area,
+.car-area,
+.cruise-area,
+.accordion-area,
+.testimonial-area,
+.team-area,
+.blog-area {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+/* 홈페이지 장식 폰트 적용 - 한국어 명조체 */
+.tour-area,
+.hotel-area,
+.resort-area,
+.flight-area,
+.car-area,
+.cruise-area,
+.accordion-area,
+.testimonial-area,
+.blog-area,
+.slider-area {
+  font-family: 'Gowun Batang', 'Nanum Myeongjo', 'Noto Serif KR', serif !important;
+}
+
+/* 홈페이지 섹션 타이틀과 제목에 장식 폰트 적용 */
+.tour-area .section-title,
+.hotel-area .section-title,
+.resort-area .section-title,
+.flight-area .section-title,
+.car-area .section-title,
+.cruise-area .section-title,
+.accordion-area .section-title,
+.testimonial-area .section-title,
+.blog-area .section-title,
+.slider-area h1,
+.tour-area h2,
+.tour-area h3,
+.hotel-area h2,
+.hotel-area h3,
+.resort-area h2,
+.resort-area h3,
+.flight-area h2,
+.flight-area h3,
+.car-area h2,
+.car-area h3,
+.cruise-area h2,
+.cruise-area h3 {
+  font-family: 'Gowun Batang', 'Nanum Myeongjo', 'Noto Serif KR', serif !important;
+}
+
+/* AOS 초기화 전에도 콘텐츠가 보이도록 */
+[data-aos] {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+/* AOS가 초기화되면 애니메이션이 작동하도록 */
+[data-aos].aos-animate {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+/* 섹션 타이틀과 콘텐츠가 보이도록 */
+.section-title,
+.single-tour-box,
+.single-hotel-box,
+.single-resort-box,
+.single-flight-box,
+.single-car-box,
+.single-cruise-box,
+.single-team-box,
+.content-blog,
+.faq-accordion,
+.single-testimonial-box {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+/* Testimonial 슬라이더도 표시 */
+.testimonial-slider.owl-carousel {
+  display: block !important;
+}
+
+/* 여행 검색 섹션 스타일 */
+.search-bar-form select.form-control {
+  padding-left: 50px !important;
+}
+
+/* 여행 검색 섹션 다크 모드 스타일 */
+.theme-dark .search-bar-section {
+  background: linear-gradient(135deg, #121212 0%, #1a1a1a 100%) !important;
+}
+
+.theme-dark .search-bar-container {
+  background: #191919 !important;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5) !important;
+}
+
+.theme-dark .search-bar-form .form-group label {
+  color: #fff !important;
+}
+
+.theme-dark .search-bar-form .form-control {
+  background-color: #121212 !important;
+  border: 2px solid rgba(255, 255, 255, 0.2) !important;
+  color: #fff !important;
+}
+
+.theme-dark .search-bar-form .form-control::placeholder {
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.theme-dark .search-bar-form .form-control:focus {
+  border-color: var(--mainColor) !important;
+  box-shadow: 0 0 0 3px rgba(231, 62, 88, 0.2) !important;
+}
+
+.theme-dark .search-bar-form .form-control[type="date"],
+.theme-dark .search-bar-form input.search-date-input {
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.theme-dark .search-bar-form .form-control[type="date"]:not([value=""]),
+.theme-dark .search-bar-form input.search-date-input:not([value=""]) {
+  color: #fff !important;
+}
+
+.theme-dark .search-bar-form .form-control[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+  opacity: 0.7;
+}
+
+.theme-dark .search-bar-form select.form-control,
+.theme-dark .search-bar-form select.search-select-input {
+  background-color: #121212 !important;
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.theme-dark .search-bar-form select.form-control[value=""]:not([value]),
+.theme-dark .search-bar-form select.search-select-input[value=""]:not([value]),
+.theme-dark .search-bar-form select.form-control:invalid,
+.theme-dark .search-bar-form select.search-select-input:invalid {
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.theme-dark .search-bar-form select.form-control:not([value=""]),
+.theme-dark .search-bar-form select.search-select-input:not([value=""]) {
+  color: #fff !important;
+}
+
+.theme-dark .search-bar-form select.form-control option[value=""],
+.theme-dark .search-bar-form select.search-select-input option[value=""] {
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.theme-dark .search-bar-form select.form-control option:not([value=""]),
+.theme-dark .search-bar-form select.search-select-input option:not([value=""]) {
+  color: #fff !important;
+  background-color: #121212 !important;
+}
+
+.theme-dark .search-bar-form .ri-map-pin-line,
+.theme-dark .search-bar-form .ri-calendar-line,
+.theme-dark .search-bar-form .ri-user-line {
+  color: var(--mainColor) !important;
+}
+
+.theme-dark .search-bar-form .ri-arrow-down-s-line {
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+
+/* 인기 지역 드롭다운 다크 모드 */
+.theme-dark .popular-destinations-dropdown {
+  background: #191919 !important;
+  border-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+.theme-dark .popular-destinations-dropdown > div:first-child {
+  color: rgba(255, 255, 255, 0.6) !important;
+  border-bottom-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.theme-dark .popular-destinations-dropdown button {
+  background: #121212 !important;
+  color: rgba(255, 255, 255, 0.9) !important;
+  border-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+.theme-dark .popular-destinations-dropdown button:hover {
+  background: var(--mainColor) !important;
+  color: #fff !important;
+  border-color: var(--mainColor) !important;
+}
+
+/* 상품 그리드 컨테이너 - 카드 영역 간격 조정 */
+.product-grid-container .row {
+  margin-top: 0 !important;
+}
+
+/* AOS 초기화 전 카드가 정상적으로 표시되도록 */
+.product-grid-container [data-aos] {
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: none !important;
+}
+
+.product-grid-container [data-aos].aos-animate {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+/* 헤더 네비게이션 바 레이아웃 - 메뉴 중앙 정렬 */
+@media (min-width: 992px) {
+  .header-bottom .navbar {
+    position: relative;
+  }
+  
+  .header-bottom .navbar .main-menu-wrap {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: auto;
+  }
+  
+  .header-bottom .navbar .other-options {
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 991px) {
+  /* 모바일 메뉴는 위에서 fixed로 설정됨 */
+}
+
+/* 헤더 네비게이션 바 높이 1.3배 증가 */
+.header-bottom .navbar {
+  min-height: calc(57px * 1.3) !important;
+  padding-top: calc(0.5rem * 1.3) !important;
+  padding-bottom: calc(0.5rem * 1.3) !important;
+}
+
+.header-bottom .navbar .navbar-nav .nav-link {
+  padding-top: calc(0.5rem * 1.3) !important;
+  padding-bottom: calc(0.5rem * 1.3) !important;
+}
+
+/* 활성 메뉴 볼드 처리 */
+.header-bottom .navbar .navbar-nav .nav-item.active .nav-link {
+  font-weight: 700 !important;
+}
+
+/* 로그인/회원가입 링크 스타일 - 메뉴 텍스트와 일치 */
+.header-bottom .navbar .other-options .user-account a {
+  color: #000;
+  font-size: 15px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.header-bottom .navbar .other-options .user-account a:hover {
+  color: var(--mainColor) !important;
+}
+
+.header-bottom .navbar .navbar-brand {
+  padding-top: calc(0.5rem * 1.3) !important;
+  padding-bottom: calc(0.5rem * 1.3) !important;
+}
+
+.header-bottom .other-options {
+  padding-top: calc(0.5rem * 1.3) !important;
+  padding-bottom: calc(0.5rem * 1.3) !important;
+}
+
+/* 로그인/회원가입 폼 placeholder 라이트 모드 - 대조도 낮춤 */
+.login-form-container .form-control::placeholder,
+.signup-form-container .form-control::placeholder {
+  color: rgba(0, 0, 0, 0.35) !important;
+  opacity: 1;
+}
+
+.login-form-container .form-control::-webkit-input-placeholder,
+.signup-form-container .form-control::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.35) !important;
+  opacity: 1;
+}
+
+.login-form-container .form-control:-ms-input-placeholder,
+.signup-form-container .form-control:-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.35) !important;
+  opacity: 1;
+}
+
+.login-form-container .form-control::-ms-input-placeholder,
+.signup-form-container .form-control::-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.35) !important;
+  opacity: 1;
+}
+
+/* FAQ 아코디언 아이콘 배경색을 아이템 색상과 일치 및 transition 동기화 (delay 제거) */
+.faq-accordion .accordion .accordion-title {
+  transition: background-color 0.5s ease, color 0.5s ease !important;
+  -webkit-transition: background-color 0.5s ease, color 0.5s ease !important;
+  transition-delay: 0s !important;
+  -webkit-transition-delay: 0s !important;
+}
+
+.faq-accordion .accordion .accordion-title i,
+.faq-accordion .accordion .accordion-title .bx {
+  background-color: var(--bgColor) !important;
+  transition: background-color 0.5s ease, color 0.5s ease !important;
+  -webkit-transition: background-color 0.5s ease, color 0.5s ease !important;
+  transition-delay: 0s !important;
+  -webkit-transition-delay: 0s !important;
+}
+
+.faq-accordion .accordion .accordion-title.active {
+  transition: background-color 0.5s ease, color 0.5s ease !important;
+  -webkit-transition: background-color 0.5s ease, color 0.5s ease !important;
+  transition-delay: 0s !important;
+  -webkit-transition-delay: 0s !important;
+}
+
+.faq-accordion .accordion .accordion-title.active i,
+.faq-accordion .accordion .accordion-title.active .bx {
+  background-color: var(--secondaryColor) !important;
+  transform: none !important;
+  -webkit-transform: none !important;
+  transition: background-color 0.5s ease, color 0.5s ease !important;
+  -webkit-transition: background-color 0.5s ease, color 0.5s ease !important;
+  transition-delay: 0s !important;
+  -webkit-transition-delay: 0s !important;
+}
+
+/* 블로그 슬라이더 네비게이션 버튼 - 고객 후기 섹션과 동일한 스타일 */
+.blog-slider.owl-theme .owl-nav .owl-prev, 
+.blog-slider.owl-theme .owl-nav .owl-next {
+  top: 50%;
+  padding: 0;
+  left: -25px;
+  width: 40px;
+  height: 40px;
+  font-size: 30px;
+  line-height: 45px;
+  border-radius: 50%;
+  position: absolute;
+  color: var(--whiteColor);
+  border: 1px solid #eae2d7;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
+  background-color: var(--mainColor);
+}
+
+.blog-slider.owl-theme .owl-nav .owl-prev i, 
+.blog-slider.owl-theme .owl-nav .owl-next i {
+  color: var(--whiteColor);
+}
+
+.blog-slider.owl-theme .owl-nav .owl-prev:hover, 
+.blog-slider.owl-theme .owl-nav .owl-next:hover {
+  -webkit-box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  background-color: var(--secondaryColor);
+  color: var(--whiteColor);
+  border-color: var(--secondaryColor);
+}
+
+.blog-slider.owl-theme .owl-nav .owl-next {
+  left: auto;
+  right: -25px;
+}
+
+.blog-slider.owl-theme .owl-nav {
+  margin-top: 0;
+}
+
+@media only screen and (max-width: 767px) {
+  .blog-slider.owl-theme .owl-nav .owl-prev, 
+  .blog-slider.owl-theme .owl-nav .owl-next {
+    left: -15px;
+    width: 35px;
+    height: 35px;
+    font-size: 25px;
+    line-height: 40px;
+  }
+  
+  .blog-slider.owl-theme .owl-nav .owl-next {
+    right: -15px;
+  }
+}
+
+/* 버튼 폰트 설정 */
+.btn.style1 {
+  font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif !important;
+}
