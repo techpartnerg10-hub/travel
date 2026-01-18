@@ -159,7 +159,6 @@ export default function LoginPage() {
                               fontSize: '16px', 
                               lineHeight: 1, 
                               fontWeight: 900,
-                              color: '#fff',
                               display: 'inline-flex',
                               alignItems: 'center',
                               justifyContent: 'center',

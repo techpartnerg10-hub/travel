@@ -17,6 +17,8 @@ export type ThemeType =
   | '도시탐방' 
   | '역사' 
   | '쇼핑'
+  | '럭셔리'
+  | '자유여행'
 
 // 여행 일정 인터페이스
 export interface ItineraryDay {

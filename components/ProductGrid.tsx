@@ -26,7 +26,8 @@ export default function ProductGrid() {
 
     // 테마 필터
     if (filters.theme !== 'all') {
-      filtered = filtered.filter(p => p.themes.includes(filters.theme))
+      const theme = filters.theme
+      filtered = filtered.filter(p => p.themes.includes(theme))
     }
 
     // 일정 필터
